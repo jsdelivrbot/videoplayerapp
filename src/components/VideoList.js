@@ -4,12 +4,13 @@ import VideoListItem from "./VideoListItem";
 class VideoList extends Component {
 
   render() {
+    console.log(this.props.videos);
     const videoItems = this.props.videos.map((video) => {
       return <VideoListItem key={video.etag} video={video} />
     });
 
     return (
-      <ul className="col-md-4 list-group">
+      <ul className="col-md-8 list-group">
         {videoItems}
       </ul>
     );
