@@ -10,7 +10,7 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <div>
+      <div className="search-bar">
         <input type="text" autoFocus placeholder="search videos"
           value={this.state.searchTerm}
           onChange={event => this.setState({searchTerm: event.target.value})} />
